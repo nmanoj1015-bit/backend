@@ -8,7 +8,9 @@ const User = require("./models/User");
 const app = express();
 
 app.use(cors({
-    origin :"https://curious-tulumba-519bec.netlify.app"
+    origin :"https://curious-tulumba-519bec.netlify.app",
+     methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
 }))
 
 app.use(express.json());
