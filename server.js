@@ -50,6 +50,9 @@ app.post("/login", async (req, res) => {
   }
 });
 
+app.get("/",(req,res)=>{
+    res.send("hello")
+)
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
